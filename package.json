@@ -6,5 +6,9 @@
     "platforms": [
       "android"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greenb75/hellocordovaplugin"
   }
 }
