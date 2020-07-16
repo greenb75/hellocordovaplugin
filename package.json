@@ -1,0 +1,10 @@
+{
+  "name": "hello-cordova-plugin",
+  "version": "0.0.2",
+  "cordova": {
+    "id": "hello-cordova-plugin",
+    "platforms": [
+      "android"
+    ]
+  }
+}

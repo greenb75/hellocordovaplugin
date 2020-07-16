@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="hello-cordova-plugin" version="0.0.2" >
+  <name>HelloCordovaPlugin</name>
+  <description>HelloCordovaPlugin</description>
+  <author>Minami</author>
+  <license>MIT</license>
+  <engines>
+    <engine name="cordova" version=">=6.5.0" />
+  </engines>
+  <asset src="www/helloPlugin.js" target="js/helloPlugin.js"/>
+  <js-module src="www/helloPlugin.js" name="helloPlugin">
+    <clobbers target="helloPlugin" />
+  </js-module>
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="HelloPlugin">
+        <param name="android-package" value="com.example.plugin.HelloPlugin"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/HelloPlugin.java" target-dir="src/com/example/plugin/"/>
+  </platform>
+</plugin>
